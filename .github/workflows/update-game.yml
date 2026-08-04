@@ -16,7 +16,7 @@ jobs:
         with:
           fetch-depth: 2  # This is crucial!
 
-      - uses: uses: LQ67-67/gh-space-shooter@main
+      - uses: ./   # 引用当前仓库根目录的 action.yml
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           output-path: 'game.gif'
