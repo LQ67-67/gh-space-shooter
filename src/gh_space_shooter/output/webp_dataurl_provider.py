@@ -52,7 +52,7 @@ class WebpDataUrlOutputProvider(OutputProvider):
                 loop=0,
                 lossless=False,
                 quality=85,
-                method=6,
+                method=4,
             )
 
             # Convert to data URL

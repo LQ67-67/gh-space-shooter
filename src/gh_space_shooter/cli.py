@@ -250,7 +250,7 @@ def _generate_output(
 
     # Encode and write
     try:
-        encoded = provider.encode(animator.generate_frames(max_frames), 1000 // fps)
+        encoded = provider.encode(animator.generate_frames(max_frames), 1000*2// fps)
         provider.write(encoded)
 
         # Console output based on provider type
