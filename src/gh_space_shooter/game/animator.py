@@ -35,10 +35,10 @@ class Animator:
         self.strategy = strategy
         self.fps = fps
         self.watermark = watermark
-        self.frame_duration = 1000 // fps
+        self.frame_duration = 1000*2 // fps
         # Delta time in seconds per frame
         # Used to scale all speeds (cells/second) to per-frame movement
-        self.delta_time = 1.0 / fps
+        self.delta_time = 3.0 / fps
 
     def generate_frames(self, max_frames: int | None = None) -> Iterator[Image.Image]:
         """
